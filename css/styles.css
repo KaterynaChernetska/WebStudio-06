@@ -843,10 +843,13 @@ button {
 }
 .privacy-link {
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
+  letter-spacing: 0.03em;  
   color: var(--accent-color);
+  text-decoration:underline;
+  text-decoration-skip-ink: none;
+  
 }
+
 .modal-btn {
   margin-left: 124px;
   margin-right: 124px;
