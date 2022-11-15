@@ -1,0 +1,116 @@
+.header {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  
+  /* --------------------------стилізація логотипу----------------------------------- */
+  .logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  
+  .logo-studio {
+    color: var(--black-color);
+  }
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+  }
+  
+  /* ----------------------------стилізація навігації --------------------------------*/
+  .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    color: var(--title-text-color);
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+  }
+  .site-nav .link.current {
+    color: var(--accent-color);
+  }
+  .site-nav .item {
+    position: relative;
+  }
+  
+  .current::after {
+    content: "";
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  /* --------------------стилізація контактної інформації------------------ */
+  .contacts a {
+    color: var(--primary-text-color);
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts > .item + .item {
+    margin-left: 50px;
+  }
+  .contacts-global-icon {
+    color: var(--primary-text-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .icon-contacts {
+    align-self: center;
+    fill: currentColor;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-global-icon:hover,
+  .contacts-global-icon:focus {
+    color: var(--accent-color);
+    fill: currentColor;
+  }
+  
+  .icon-contacts:hover,
+  .icon-contacts:focus {
+    fill: currentColor;
+  }
+  
+  .main-menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
