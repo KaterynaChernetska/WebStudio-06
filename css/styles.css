@@ -550,8 +550,8 @@ button {
   margin-left: auto;
 }
 .subscribe-input {
-  width: 360px;
-  height: 52px;
+  width: 358px;
+  height: 50px;
   color: var(--primary-white-color);
   padding-left: 16px;
   outline: transparent;
@@ -582,7 +582,7 @@ button {
 .button.primary.sub {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
   padding-left: 28px;
   padding-right: 28px;
@@ -626,33 +626,34 @@ button {
 }
 
 /* --------------------------------------Наші проекти --------------------------------- */
-.projects {
+.cards-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.card {
+.card-grid {
   display: flex;
   width: calc((100% - 60px) / 3);
 }
-.card a {
+.card-grid a {
+  text-decoration: none;
   transition-property: box-shadow, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card a:hover,
-.card a:focus {
+.card-grid a:hover,
+.card-grid a:focus {
   opacity: 1;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-.projects a {
+/* .сards-grid a {
   text-decoration: none;
-}
+} */
 
-.projects-title {
+.card-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -662,7 +663,7 @@ button {
   margin-top: 0;
   margin-bottom: 4px;
 }
-.projects-type {
+.card-type {
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -670,7 +671,7 @@ button {
   margin: 0;
 }
 
-.content {
+.card-content {
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;
@@ -735,7 +736,6 @@ button {
 
 .modal {
   width: 528px;
-  min-height: 581px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   position: absolute;
@@ -759,7 +759,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: fill;
+  cursor: pointer;
+}
+.close-icon {
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -783,6 +786,8 @@ button {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+  display: block;
+  margin-bottom: 4px;
 }
 .input-wrap {
   position: relative;
@@ -794,7 +799,6 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
-  margin-top: 4px;
   margin-bottom: 10px;
   outline: transparent;
   transform: color, fill;
@@ -806,12 +810,11 @@ button {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-70%); 
 }
 .coment {
   width: 100%;
   height: 100px;
-  outline: transparent;
   font-size: 14px;
   padding: 12px;
   resize: none;
@@ -837,10 +840,10 @@ button {
   background-color: var(--accent-color);
   outline: transparent;
 }
-.input-check:checked + .privacy-text span:hover,
+/* .input-check:checked + .privacy-text span:hover,
 .input-check:checked + .privacy-text span:focus {
   color: var(--accent-color);
-}
+} */
 .privacy-link {
   line-height: 1.7;
   letter-spacing: 0.03em;  
